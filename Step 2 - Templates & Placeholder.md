@@ -21,7 +21,7 @@ Placeholders are an easy way to define sections in HTML code to be editable thro
 {% load cms_tags %}
 <html>
     <head>
-        <title>My Awesome Website</title>
+        <title>{% page_attribute page_title %}</title>
     </head>
     <body>
         {% block "content" %}
